@@ -33,4 +33,20 @@ public class CalcLogg {
         System.out.println(i);
 
     }
+
+    public static int getSum(int a, int b){
+        return a+b;
+    }
+
+    public static int getSub(int a, int b){
+        return a-b;
+    }
+
+    public static int getMultiple(int a, int b){
+        return a*b;
+    }
+    public static int getDivide(int a, int b){
+        return a/b;
+    }
+
 }
