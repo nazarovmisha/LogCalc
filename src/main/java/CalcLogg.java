@@ -23,7 +23,7 @@ public class CalcLogg {
             case "/" -> {
                 if (j == 0) {
                     log.fatal("can't divide by zero");
-                    i=0;
+                    i = 0;
                 } else {
                     i /= j;
                 }
@@ -34,19 +34,20 @@ public class CalcLogg {
 
     }
 
-    public static int getSum(int a, int b){
-        return a+b;
+    public static int getSum(int a, int b) {
+        return a + b;
     }
 
-    public static int getSub(int a, int b){
-        return a-b;
+    public static int getSub(int a, int b) {
+        return a - b;
     }
 
-    public static int getMultiple(int a, int b){
-        return a*b;
+    public static int getMultiple(int a, int b) {
+        return a * b;
     }
-    public static int getDivide(int a, int b){
-        return a/b;
+
+    public static int getDivide(int a, int b) {
+        return a / b;
     }
 
 }
