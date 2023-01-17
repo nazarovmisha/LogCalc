@@ -1,10 +1,10 @@
-import org.apache.logging.log4j.Logger;
-import org.apache.logging.log4j.LogManager;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.Scanner;
 
 public class CalcLogg {
-    private static final Logger log = LogManager.getLogger(CalcLogg.class);
+    private static final Logger log = LoggerFactory.getLogger(CalcLogg.class);
     public static Scanner sc = new Scanner(System.in);
 
 
@@ -22,7 +22,7 @@ public class CalcLogg {
             case "*" -> i *= j;
             case "/" -> {
                 if (j == 0) {
-                    log.fatal("can't divide by zero");
+                    log.error("can't divide by zero");
                     i = 0;
                 } else {
                     i /= j;
